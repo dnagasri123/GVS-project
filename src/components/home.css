@@ -1,4 +1,10 @@
 .home-container {
+  margin: 0;
+  padding: 0;
+  
+  background-image: url("./images/home-background.jpeg"); /* Adjust the path to your background image */
+  background-size: cover;
+  background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -25,10 +31,16 @@
   
   .company-name {
     margin: 0;
+    color:#490375;
   }
   
   .icon-bar {
     display: flex;
+    cursor: pointer;
+  position: relative; 
+  margin:10px;
+  /* align-items: flex-start;  */
+  
   }
   
   
@@ -54,4 +66,41 @@
   .icon {
     width: 30px; 
     margin-right: 16px; 
+  }  
+
+
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 200px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border: 1px solid #ccc;
+      z-index: 1;
+      border-radius: 10px;
+      margin-top: 5px; /* Remove default margin-top */
+    }
+    
+  
+  
+  .dropdown p {
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+    color: #333;
+    transition: background-color 0.3s;
   }
+  
+  .dropdown p:hover {
+    background-color: #f4f4f4;
+  }
+  .homeicon-container{
+    margin-top: 80px;
+    margin-bottom: 80px;
+  display: flex;
+margin-left: 1200px;
+
+  }
+
+  

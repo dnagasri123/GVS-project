@@ -1,0 +1,72 @@
+/* OwnerDetailsForm.css */
+
+.owner-details-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(245, 245, 245,0.75);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  
+
+
+  .ownerbutton-container {
+    display: flex;
+    align-items: center;
+    /* background-color: #dddddd30; */
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  
+  .ownersave-button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    margin:20px;
+  }
+  
+  .ownercancel-button {
+    padding: 10px;
+    background-color: #6b5d5d;
+    margin:20px;
+    
+  }
+  .ownericon-container{
+    
+    margin-bottom: 80px;
+  display: flex;
+margin-left: 1200px;
+
+  }
+  .ownerheading{
+    color:#490375;
+    background-color: white;
+    padding:5px;
+    border-radius: 5px;
+  font-family: serif;
+  }
+  
+  
+   
+
+
+  

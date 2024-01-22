@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate,Link } from 'react-router-dom';
+import SupportIcon from './SupportIcon';
 import './register.css';
 
 function Register() {
@@ -45,29 +46,32 @@ function Register() {
 
   return (
     <div className="registration-container">
+      <div>
+
+
       <h1 className="form-heading">Register</h1>
       <form className="register-form" onSubmit={handleSubmit}>
         {/* Display success or error message if there is one */}
         {message && <p className={message.includes('successful') ? 'success-message' : 'error-message'}>{message}</p>}
 
         <div className="input-container">
-          <label htmlFor="firstName">First Name</label>
-          <input type="text" id="firstName" value={firstName} onChange={handleFirstNameChange} />
+          <label htmlFor="firstName"></label>
+          <input type="text"  placeholder="First Name" id="firstName" value={firstName} onChange={handleFirstNameChange} />
         </div>
 
         <div className="input-container">
-          <label htmlFor="lastName">Last Name</label>
-          <input type="text" id="lastName" value={lastName} onChange={handleLastNameChange} />
+          <label htmlFor="lastName"></label>
+          <input type="text" placeholder="Last Name" id="lastName" value={lastName} onChange={handleLastNameChange} />
         </div>
 
         <div className="input-container">
-          <label htmlFor="username">Username</label>
-          <input type="text" id="username" value={username} onChange={handleUsernameChange} />
+          <label htmlFor="username"></label>
+          <input type="text" placeholder="Username" id="username" value={username} onChange={handleUsernameChange} />
         </div>
 
         <div className="input-container">
-          <label htmlFor="password">Password</label>
-          <input type="password" id="password" value={password} onChange={handlePasswordChange} />
+          <label htmlFor="password"></label>
+          <input type="password" placeholder='Password' id="password" value={password} onChange={handlePasswordChange} />
         </div>
 
         <button type="submit" className="register-button">
@@ -75,9 +79,17 @@ function Register() {
         </button>
 
         <p>
-          Already have an account? <Link to="/LoginPage">Login</Link>
+          Already have an account? 
+          <Link to="/LoginPage" className='loginlink'>Login</Link>
         </p>
       </form>
+      </div>
+      <div className='regsitericon-container'>
+    <SupportIcon />
+
+    </div>
+      
+      
     </div>
   );
 }

@@ -1,0 +1,41 @@
+.booked-orders-page{
+    border-radius: 20px;
+    padding: 30px;
+    background-color: rgb(245, 245, 245,0.75);
+
+}
+.action-button-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.accept-booking{
+    margin:30px;
+}
+.main-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookordersicon-container{
+    
+    margin-bottom: 80px;
+  display: flex;
+margin-left: 1200px;
+
+  }
+  .bookedorders-heading{
+    color:#490375;
+    background-color: white;
+    padding:5px;
+    border-radius: 5px;
+  font-family: serif;
+  margin-bottom:40px;
+  }
+  .logo{
+    height:50px;
+    width:100px;
+  }

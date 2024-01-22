@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { useNavigate} from 'react-router-dom';
+import { Link,useNavigate} from 'react-router-dom';
 import './login.css'; // Import the CSS file for styling
+import SupportIcon from './SupportIcon';
 
 function Login() {
     const navigate = useNavigate();
@@ -16,6 +17,10 @@ function Login() {
   const handlePasswordChange = (event) => {
     setPassword(event.target.value);
   };
+  const goToRegsiter=()=>{
+    navigate('/RegistrationPage')
+
+  }
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -45,22 +50,24 @@ function Login() {
 
   return (
     <div className="login-container">
-      <h1 className='heading'> GVS partner</h1>
+      <div>
+      <h1 className='heading'> GVS PARTNER</h1>
       
       <form className="login-form" onSubmit={handleSubmit}>
       {message && <p className={message.includes('successful') ? 'success-message' : 'error-message'}>{message}</p>}
         <div className="input-container">
-          <label htmlFor="username">Username</label>
-          <input type="text" id="username" value={username} onChange={handleUsernameChange} />
+          <label htmlFor="username"></label>
+          <input type="text" placeholder="Username" id="username" value={username} onChange={handleUsernameChange} />
         </div>
 
         <div className="input-container">
-          <label htmlFor="password">Password</label>
-          <input type="password" id="password" value={password} onChange={handlePasswordChange} />
+          <label htmlFor="password"></label>
+          <input type="password" placeholder="Password" id="password" value={password} onChange={handlePasswordChange} />
         </div>
 
         <div className="forgot-password">
-          <a href="#">Forgot Password?</a>
+          {/* <a href="#">Forgot Password?</a> */}
+          <Link to="/ForgotPassword" className='forgotpassword'>Forgot password</Link>
         </div>
         <div id="error" className='err-msg'></div>
 
@@ -71,22 +78,35 @@ function Login() {
           Login
         </button> 
 
-        <button type="button" className="symbol-button">
-          <span role="img" aria-label="Symbol">
-            🔒
-          </span>{' '}
-          support with symbol
-        </button> 
+        
 
         <div className="register-container">
           <p className='register-text'>Not a member yet?</p>
-          <button type="button" className='button-container'>
+          <button type="button" className='regbutton-container' onClick={goToRegsiter}>
             Register here
           </button>
           
         </div>
       </form>
+
+
+
+
+
+
+
+      </div>
+      
+
+      
+    <div className='icon-container'>
+    <SupportIcon />
+
     </div>
+      
+      
+    </div>
+   
   );
 }
 

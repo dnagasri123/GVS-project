@@ -1,0 +1,27 @@
+.filterbutton-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pendingpaymentsbutton{
+    margin:30px;
+}
+.cancelordersbutton{
+    margin:30px;
+
+}
+
+.paymentsreceivedbutton{
+    margin:30px;
+}
+.filtericon-container{
+    margin-bottom: 80px;
+  display: flex;
+margin-left: 1200px;
+
+}
+.logo{
+    height:50px;
+    width:100px;
+  }

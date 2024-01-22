@@ -1,0 +1,12 @@
+.editheading{
+    color:#490375;
+    background-color: white;
+    padding:5px;
+    border-radius: 5px;
+  font-family: serif;
+}
+.modifyicon-container{
+    margin-bottom: 80px;
+    display: flex;
+  margin-left: 1200px;
+}

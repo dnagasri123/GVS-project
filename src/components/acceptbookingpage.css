@@ -1,0 +1,62 @@
+.accept-orders-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .booked-details {
+   
+
+    background-color: rgb(245, 245, 245,0.75);
+    margin: 15px;
+
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .bookingsinput-container{
+    margin: 20px;
+    padding: 5px;
+  }
+  
+  .submitbutton {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin:20px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+
+  .acceptordersicon-container{
+    
+    margin-bottom: 80px;
+  display: flex;
+margin-left: 1200px;
+
+  }
+  .acceptbooking-heading{
+    color:#490375;
+    background-color: white;
+    padding:5px;
+    border-radius: 5px;
+  font-family: serif;
+
+  }
+  .logo{
+    height:50px;
+    width:100px;
+  }
+  

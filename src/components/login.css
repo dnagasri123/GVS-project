@@ -1,15 +1,21 @@
 
-.body{
+/* .body{
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-image: url("../components/images/login-background.jpg"); /* Adjust the path to your background image */
+  background-image: url("./images/login-background.jpg"); 
   background-size: cover;
   background-repeat: no-repeat;
 
-}
+} */
 
 .login-container {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url("./images/login-background.jpg"); /* Adjust the path to your background image */
+  background-size: cover;
+  background-repeat: no-repeat;
  
     display: flex;
     flex-direction: column;
@@ -19,11 +25,12 @@
   }
   
   .login-form {
+    background-color: rgb(118, 163, 163,0.75);
     width: 300px;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(248, 246, 250, 0.977);
   }
   
   .input-container {
@@ -39,7 +46,7 @@
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid #4dcd1e;
     border-radius: 3px;
   }
   
@@ -50,14 +57,14 @@
   
   a {
     text-decoration: underline;
-    color: #007bff;
+    color: #1a1717;
     cursor: pointer;
   }
   
   .login-button {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color:#0e36a5;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -76,7 +83,7 @@
   .symbol-button {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color:#0e36a5;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -88,3 +95,24 @@
     margin-top:5px;
   } 
   
+  .regbutton-container {
+    display: flex;
+    background-color:#0e36a5;
+    border-radius: 3px;
+    border-style: none;
+    color:#fff;
+    cursor: pointer;
+    justify-content: space-between;
+    margin-top: 5px;
+    padding: 10px;
+}
+.heading{
+  color:#490375;
+  font-family: serif;
+}
+.icon-container{
+  margin-top: 100px;
+  display: flex;
+margin-left: 1000px;
+
+}
